@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前航-前端导航网站</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery.js"></script>
+    <script src="//at.alicdn.com/t/font_3398461_x3j4z9xak8q.js"></script>
+</head>
+
+<body>
+
+<header class="htmlHeader">
+
+    <div class="div1">
+        <img src="images/nav1.png" alt="">
+    </div>
+
+    <div class="search">
+
+        <select id="selectId" name="searchEngine" onchange="selectChange()">
+            <option value="baidu">百度</option>
+            <option value="sogou">搜狗</option>
+        </select>
+
+        <form action="https://www.baidu.com/s" class="searchBar" method="get">
+
+            <input name="wd" type="text">
+
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+
+
+</header>
+<main class="htmlMain">
+
+    <ul class="siteList">
+        <!-- <li>
+            <a href="https://github.com/">
+                <div class="site">
+                    <div class="logo">G</div>
+                    <div class="link">Github</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="https://es6.ruanyifeng.com/#README">
+                <div class="site">
+                    <div class="logo">E</div>
+                    <div class="link">ES6入门教程</div>
+                </div>
+            </a>
+        </li>  -->
+        <li class="last">
+            <div class="addButton">
+                <div class="logo" >
+                    <img src="images/plusIcon.png" alt="">
+                </div>
+                <div class="text">新增网站</div>
+            </div>
+        </li>
+
+    </ul>
+</main>
+
+<script src="./main.js"></script>
+</body>
+</html>
